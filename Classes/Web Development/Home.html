@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is home page</title>
+    </head>
+    <body>        
+        <input id="button1" type="button" value="Click me!" onclick="print()" />
+        <input id="button2" type="button" value="Click me!" />
+
+        <script>
+            let button = document.getElementById('button2');
+            button.addEventListener('click', function() {
+                console.log("Hello from web page");
+            });
+
+            let print = () => console.log("Clicking button 1");
+
+        </script>
+    </body>
+</html>
